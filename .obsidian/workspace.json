@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "369cb7e609659fe7",
+        "id": "9a9304261a26ae99",
         "type": "tabs",
         "children": [
           {
-            "id": "73cac016bb5ad62d",
+            "id": "4b4f55bd9b1419f7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "NextJs Notes/Next.js Concepts Guide.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Next.js Concepts Guide"
             }
           }
         ]
@@ -161,13 +165,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "73cac016bb5ad62d",
+  "active": "4b4f55bd9b1419f7",
   "lastOpenFiles": [
     "Mysql Questions/SQL Queries Guide for Online Learning Platform.md",
+    "NextJs Notes/Next.js Concepts Guide.md",
+    "Frontend Questions/Questions and Answer.md",
+    "React Notes/Complete React Concepts Guide.md",
+    "NextJs Notes",
     "Nestjs Notes/Nest js OverView.md",
     "Expressjs notes/Express Overview.md",
     "Expressjs notes",
-    "Frontend Questions/Questions and Answer.md",
     "Javascript notes/hoisting.md",
     "Javascript notes/Scope.md",
     "Javascript notes/Data Types.md",
@@ -182,7 +189,6 @@
     "Nestjs Notes",
     "Javascript notes",
     "Untitled 1.md",
-    "Untitled 1",
     "Untitled.md",
     "Note 2.md",
     "Welcome.md",
