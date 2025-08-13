@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9a9304261a26ae99",
+        "id": "33912ddcfba011ca",
         "type": "tabs",
         "children": [
           {
-            "id": "4b4f55bd9b1419f7",
+            "id": "32f1e1b308d2f18c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NextJs Notes/Next.js Concepts Guide.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Next.js Concepts Guide"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "every",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -165,20 +161,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4b4f55bd9b1419f7",
+  "active": "32f1e1b308d2f18c",
   "lastOpenFiles": [
-    "Mysql Questions/SQL Queries Guide for Online Learning Platform.md",
-    "NextJs Notes/Next.js Concepts Guide.md",
-    "Frontend Questions/Questions and Answer.md",
     "React Notes/Complete React Concepts Guide.md",
-    "NextJs Notes",
-    "Nestjs Notes/Nest js OverView.md",
-    "Expressjs notes/Express Overview.md",
-    "Expressjs notes",
+    "Javascript notes/JavaScript call, apply, and bind - Complete Guide.md",
+    "Javascript notes/JavaScript Object Methods.md",
+    "Javascript notes/JavaScript Array Methods - Complete Guide.md",
+    "Javascript notes/Normal Function vs Arrow Function in JavaScript.md",
+    "Javascript notes/JavaScript Error Handling.md",
     "Javascript notes/hoisting.md",
+    "Mysql Questions/SQL Queries Guide for Online Learning Platform.md",
+    "Expressjs notes/Express Concept and Guide.md",
+    "NextJs Notes/Next.js Concepts Guide.md",
+    "Nestjs Notes/Nest js Concepts  Guide.md",
+    "Javascript notes/Javascript Introduction.md",
+    "Frontend Questions/Frontend Questions and Answer.md",
+    "NextJs Notes",
+    "Expressjs notes",
     "Javascript notes/Scope.md",
     "Javascript notes/Data Types.md",
-    "Javascript notes/Introduction.md",
     "Javascript notes/interpreted programming.md",
     "Mysql Notes",
     "Frontend Questions",
