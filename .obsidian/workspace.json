@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ec1cc58600c1af84",
+        "id": "369cb7e609659fe7",
         "type": "tabs",
         "children": [
           {
-            "id": "3fed31bfc3282fba",
+            "id": "73cac016bb5ad62d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -161,8 +161,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3fed31bfc3282fba",
+  "active": "73cac016bb5ad62d",
   "lastOpenFiles": [
+    "Mysql Questions/SQL Queries Guide for Online Learning Platform.md",
+    "Nestjs Notes/Nest js OverView.md",
     "Expressjs notes/Express Overview.md",
     "Expressjs notes",
     "Frontend Questions/Questions and Answer.md",
