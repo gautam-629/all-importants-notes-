@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b3d68a4916ffc3ed",
+        "id": "4bb2ec76ee3722b6",
         "type": "tabs",
         "children": [
           {
-            "id": "ef2625b5f872def5",
+            "id": "1fb79d98da6e670a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Frontend Questions/Questions and Answer.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Questions and Answer"
             }
           }
         ]
@@ -161,11 +165,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ef2625b5f872def5",
+  "active": "1fb79d98da6e670a",
   "lastOpenFiles": [
+    "Frontend Questions/Questions and Answer.md",
+    "Javascript notes/hoisting.md",
     "Javascript notes/Scope.md",
-    "Javascript notes/Introduction.md",
     "Javascript notes/Data Types.md",
+    "Javascript notes/Introduction.md",
     "Javascript notes/interpreted programming.md",
     "Mysql Notes",
     "Frontend Questions",

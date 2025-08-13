@@ -5,19 +5,19 @@
 ## 1. Overview
 
 In JavaScript, `let`, `var`, and `const` are used to declare variables.  
-They differ in **scope**, **re-declaration**, **re-assignment**, and **hoisting**.
+They differ in **scope**, **re-declaration**, **re-assignment**, and **[[hoisting]]**.
 
 ---
 
 ## 2. Key Differences
 
-| Feature           | `var` | `let` | `const` |
-|-------------------|-------|-------|---------|
-| **Scope**         | Function scope | Block scope | Block scope |
-| **Re-declaration**| ✅ Allowed | ❌ Not allowed | ❌ Not allowed |
-| **Re-assignment** | ✅ Allowed | ✅ Allowed | ❌ Not allowed |
-| **Hoisting**      | ✅ Hoisted (initialized as `undefined`) | ✅ Hoisted (but in Temporal Dead Zone) | ✅ Hoisted (but in Temporal Dead Zone) |
-| **Initialization**| Optional | Optional | Required |
+| Feature            | `var`                                  | `let`                                 | `const`                               |
+| ------------------ | -------------------------------------- | ------------------------------------- | ------------------------------------- |
+| **Scope**          | Function scope                         | Block scope                           | Block scope                           |
+| **Re-declaration** | ✅ Allowed                              | ❌ Not allowed                         | ❌ Not allowed                         |
+| **Re-assignment**  | ✅ Allowed                              | ✅ Allowed                             | ❌ Not allowed                         |
+| **Hoisting**       | ✅ Hoisted (initialized as `undefined`) | ✅ Hoisted (but in Temporal Dead Zone) | ✅ Hoisted (but in Temporal Dead Zone) |
+| **Initialization** | Optional                               | Optional                              | Required                              |
 
 ---
 
