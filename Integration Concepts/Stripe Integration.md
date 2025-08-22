@@ -1,0 +1,1 @@
+![stripe payment flow](./stripe_flow_svg.jpg)

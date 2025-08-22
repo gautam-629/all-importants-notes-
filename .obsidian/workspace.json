@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "33912ddcfba011ca",
+        "id": "d75b0f9a1e4e325c",
         "type": "tabs",
         "children": [
           {
-            "id": "32f1e1b308d2f18c",
+            "id": "737de3cc5ebec2f3",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -153,6 +153,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -161,17 +162,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "32f1e1b308d2f18c",
+  "active": "737de3cc5ebec2f3",
   "lastOpenFiles": [
+    "Mysql Questions/Integrate pagination In Sql.md",
+    "Mysql Questions/SQL Queries Guide for Online Learning Platform.md",
+    "javascript Questions/Javascript String Related Questions.md",
+    "javascript Questions/Untitled",
+    "javascript Questions",
+    "Integration Concepts/Stripe Integration.md",
+    "Integration Concepts/stripe_flow_svg.jpg",
+    "Integration Concepts/stripe_flow_svg.png",
+    "Integration Concepts/img/stripe_flow_svg.png",
+    "Integration Concepts/img",
+    "Integration Concepts/New folder",
+    "Integration Concepts",
+    "Expressjs notes/Express Concept and Guide.md",
+    "Javascript notes/JavaScript Object Methods.md",
     "React Notes/Complete React Concepts Guide.md",
     "Javascript notes/JavaScript call, apply, and bind - Complete Guide.md",
-    "Javascript notes/JavaScript Object Methods.md",
     "Javascript notes/JavaScript Array Methods - Complete Guide.md",
     "Javascript notes/Normal Function vs Arrow Function in JavaScript.md",
     "Javascript notes/JavaScript Error Handling.md",
     "Javascript notes/hoisting.md",
-    "Mysql Questions/SQL Queries Guide for Online Learning Platform.md",
-    "Expressjs notes/Express Concept and Guide.md",
     "NextJs Notes/Next.js Concepts Guide.md",
     "Nestjs Notes/Nest js Concepts  Guide.md",
     "Javascript notes/Javascript Introduction.md",
@@ -184,11 +196,6 @@
     "Mysql Notes",
     "Frontend Questions",
     "Backend  Questions",
-    "Problem Solving questions",
-    "React Notes",
-    "Mysql Questions",
-    "Nestjs Notes",
-    "Javascript notes",
     "Untitled 1.md",
     "Untitled.md",
     "Note 2.md",
