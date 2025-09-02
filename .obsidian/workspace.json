@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d75b0f9a1e4e325c",
+        "id": "00cc49a0524d8f00",
         "type": "tabs",
         "children": [
           {
-            "id": "737de3cc5ebec2f3",
+            "id": "73bea45e793a5c54",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Databases/Mysql/SQL Functions Reference.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SQL Functions Reference"
             }
           }
         ]
@@ -162,15 +166,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "737de3cc5ebec2f3",
+  "active": "73bea45e793a5c54",
   "lastOpenFiles": [
+    "Databases/Mysql/SQL Functions Reference.md",
+    "Databases/Mysql",
+    "Frontend Questions/Frontend Questions and Answer.md",
+    "Databases/Redis",
+    "Databases",
+    "Dsa/Big O Notation - Short Notes.md",
+    "Dsa",
+    "Backend  Questions/Note js Backend Related Question.md",
+    "Integration Concepts/esewa Integration Flow.md",
     "Mysql Questions/Integrate pagination In Sql.md",
+    "Nestjs Notes/Nest js Concepts  Guide.md",
+    "Integration Concepts/Stripe Integration.md",
+    "Integration Concepts/esewaflow.jpg",
+    "Integration Concepts/stripe_flow_svg.jpg",
     "Mysql Questions/SQL Queries Guide for Online Learning Platform.md",
     "javascript Questions/Javascript String Related Questions.md",
     "javascript Questions/Untitled",
     "javascript Questions",
-    "Integration Concepts/Stripe Integration.md",
-    "Integration Concepts/stripe_flow_svg.jpg",
     "Integration Concepts/stripe_flow_svg.png",
     "Integration Concepts/img/stripe_flow_svg.png",
     "Integration Concepts/img",
@@ -185,21 +200,14 @@
     "Javascript notes/JavaScript Error Handling.md",
     "Javascript notes/hoisting.md",
     "NextJs Notes/Next.js Concepts Guide.md",
-    "Nestjs Notes/Nest js Concepts  Guide.md",
     "Javascript notes/Javascript Introduction.md",
-    "Frontend Questions/Frontend Questions and Answer.md",
     "NextJs Notes",
-    "Expressjs notes",
     "Javascript notes/Scope.md",
     "Javascript notes/Data Types.md",
     "Javascript notes/interpreted programming.md",
-    "Mysql Notes",
-    "Frontend Questions",
-    "Backend  Questions",
     "Untitled 1.md",
     "Untitled.md",
     "Note 2.md",
-    "Welcome.md",
     "Untitled.canvas"
   ]
 }
