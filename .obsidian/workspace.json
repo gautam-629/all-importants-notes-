@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d5d46f325bfd77b0",
+        "id": "48377e9c21e2b22c",
         "type": "tabs",
         "children": [
           {
-            "id": "59fec712e3c52fc6",
+            "id": "0b92bcd3fd43ed2b",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 355.51103591918945
   },
   "right": {
     "id": "b1d2439b4231ef07",
@@ -162,48 +162,48 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "59fec712e3c52fc6",
+  "active": "0b92bcd3fd43ed2b",
   "lastOpenFiles": [
-    "Dsa/Big O Notation - Short Notes.md",
-    "Integration Concepts/Integration Concept.md",
-    "Integration Concepts/Stripe Integration.md",
-    "Integration Concepts/esewa Integration Flow.md",
-    "Integration Concepts/esewaflow.jpg",
-    "Databases/Databases.md",
-    "Databases/Mysql/Questions/Integrate pagination In Sql.md",
-    "Databases/Mysql/Questions/SQL Queries Guide for Online Learning Platform.md",
-    "Dsa/DSA.md",
-    "Javascript/javascript doc/Javascript.md",
     "Javascript/Javascript.md",
+    "Javascript/javascript doc/Javascript Introduction.md",
+    "Javascript/javascript doc/Regex Syntax Reference (JavaScript).md",
+    "Integration Concepts/Integration Concept.md",
+    "Integration Concepts/esewaflow.jpg",
+    "Integration Concepts/esewa Integration Flow.md",
+    "Databases/Databases.md",
     "Frontend/Frontend.md",
-    "Backend/Backend.md",
-    "Backend/Backend  Questions/Backend Related Question.md",
-    "Javascript/javascript doc/Data Types.md",
-    "Javascript/javascript doc/JavaScript Array Methods - Complete Guide.md",
-    "Javascript/javascript doc/Scope.md",
+    "Javascript/javascript Questions/JavaScript Interview Questions.md",
+    "Frontend/React doc/Complete React Concepts Guide.md",
+    "Javascript/javascript Questions/Array Manipulation Questions.md",
+    "Javascript/javascript Questions/Javascript String Related Questions.md",
+    "Javascript/javascript doc/Normal Function vs Arrow Function in JavaScript.md",
+    "Javascript/javascript doc/JavaScript call, apply, and bind - Complete Guide.md",
     "Javascript/javascript doc/hoisting.md",
-    "Frontend",
+    "Javascript/javascript doc/Scope.md",
+    "Javascript/javascript doc/JavaScript Error Handling.md",
+    "Javascript/javascript doc/JavaScript Object Methods.md",
+    "Javascript/javascript doc/JavaScript Array Methods - Complete Guide.md",
+    "Frontend/NextJs doc/Next.js Concepts Guide.md",
     "Frontend/Questions/Frontend Questions and Answer.md",
+    "Javascript/javascript doc/JavaScript String Methods - Complete Guide.md",
+    "Integration Concepts/Stripe Integration.md",
+    "Array Manipulation.md",
+    "Databases/Mysql/SQL Functions Reference.md",
+    "Databases/Mysql/Query Optimize.md",
+    "Databases/Mysql/Questions/SQL Queries Guide for Online Learning Platform.md",
+    "Frontend",
     "Backend",
     "Javascript/javascript doc",
-    "Javascript/javascript Questions/Javascript String Related Questions.md",
     "Databases/Mysql/Questions",
-    "Databases/Mysql/Relations database concept.md",
-    "Databases/Mysql/SQL Functions Reference.md",
     "Databases/Mysql",
     "Databases/Redis",
     "Databases",
     "Dsa",
-    "Backend/Nestjs Doc/Nest js Concepts  Guide.md",
     "Integration Concepts/stripe_flow_svg.jpg",
     "javascript Questions/Untitled",
     "Javascript/javascript Questions",
     "Integration Concepts/stripe_flow_svg.png",
     "Integration Concepts/img/stripe_flow_svg.png",
-    "Backend/Expressjs notes/Express Concept and Guide.md",
-    "Javascript/javascript doc/JavaScript Object Methods.md",
-    "Frontend/React doc/Complete React Concepts Guide.md",
-    "Javascript/javascript doc/JavaScript call, apply, and bind - Complete Guide.md",
     "Untitled.canvas"
   ]
 }

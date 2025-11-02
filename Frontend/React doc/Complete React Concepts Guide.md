@@ -397,8 +397,8 @@ const TodoList = memo(({ todos, onAdd }) => {
 ```
 
 ### 3. Code Splitting with React Lazy + Suspense
-
 Load components only when needed to reduce initial bundle size.
+**Code splitting** is a technique to **divide your JavaScript bundle** into smaller pieces ("chunks") so that your app only loads the code it **needs right now**, rather than loading _everything_ at once when the page first loads.
 
 ```jsx
 import React, { Suspense, lazy, useState } from 'react';
@@ -1476,3 +1476,530 @@ This guide covers the essential React concepts for building optimized, maintaina
 - Choose the right state management solution based on your app's complexity
 - Prefer hooks over HOCs for reusable logic
 - Keep components focused and break them down when they get too large
+
+## 6. What is JSX and how does it work?
+
+**Simple Answer:** JSX is like writing HTML inside JavaScript. It makes creating UI components easier and more readable.
+
+**Example:**
+
+```jsx
+// Instead of writing:
+React.createElement('h1', null, 'Hello World')
+
+// You write:
+<h1>Hello World</h1>
+```
+
+**How it works:**
+
+- You write HTML-like code
+- Babel (a tool) converts it to regular JavaScript
+- React uses that JavaScript to create elements
+
+**Why use it?**
+
+- More readable and intuitive
+- Looks like the UI you're building
+- Catches errors at compile time
+
+---
+
+## 7. What is Reconciliation in React?
+
+**Simple Answer:** Reconciliation is React's way of figuring out what changed in your UI and updating only those parts, instead of redrawing everything.
+
+**Real-world analogy:** Imagine you have a todo list. Instead of rewriting the entire list when you mark one item complete, you just cross out that one item. That's what React does!
+
+**How it works:**
+
+1. You update state/props
+2. React creates a new Virtual DOM
+3. React compares new Virtual DOM with old Virtual DOM (this is reconciliation)
+4. React updates only the changed parts in the real DOM
+
+**Why it matters:**
+
+- Makes your app fast
+- Saves computer resources
+- Users see smooth updates
+
+---
+
+## 8. What is useRef and its use cases?
+
+**Simple Answer:** `useRef` is like a box where you can store a value that:
+
+- Doesn't cause re-renders when changed
+- Persists between renders
+- Can directly access DOM elements
+
+**Use Cases:**
+
+### Use Case 1: Accessing DOM Elements
+
+```jsx
+function FocusInput() {
+  const inputRef = useRef(null);
+  
+  const handleClick = () => {
+    inputRef.current.focus(); // Focus the input
+  };
+  
+  return (
+    <>
+      <input ref={inputRef} />
+      <button onClick={handleClick}>Focus Input</button>
+    </>
+  );
+}
+```
+
+### Use Case 9: Storing Previous Values
+
+```jsx
+function Counter() {
+  const [count, setCount] = useState(0);
+  const prevCountRef = useRef();
+  
+  useEffect(() => {
+    prevCountRef.current = count; // Store previous count
+  });
+  
+  return <div>Now: {count}, Before: {prevCountRef.current}</div>;
+}
+```
+
+### Use Case 10: Storing Mutable Data (without re-renders)
+
+```jsx
+function Timer() {
+  const intervalRef = useRef(null);
+  
+  const startTimer = () => {
+    intervalRef.current = setInterval(() => {
+      console.log('Tick');
+    }, 1000);
+  };
+  
+  const stopTimer = () => {
+    clearInterval(intervalRef.current);
+  };
+  
+  return (
+    <>
+      <button onClick={startTimer}>Start</button>
+      <button onClick={stopTimer}>Stop</button>
+    </>
+  );
+}
+```
+
+**When to use:**
+
+- Accessing DOM elements (input focus, scroll position)
+- Storing timers or intervals
+- Keeping track of previous values
+- Any value that shouldn't trigger re-renders
+
+---
+
+## 11. What is a Custom Hook?
+
+**Simple Answer:** A custom hook is your own reusable function that uses React hooks inside it. It's like creating a recipe that you can use in multiple places.
+
+**When to create one:**
+
+- You're copying the same logic in multiple components
+- You want to organize complex logic
+- You want to share functionality across your app
+
+**Example: useFetch Custom Hook**
+
+```jsx
+// Custom Hook
+function useFetch(url) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  
+  useEffect(() => {
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        setData(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        setError(err);
+        setLoading(false);
+      });
+  }, [url]);
+  
+  return { data, loading, error };
+}
+
+// Using the custom hook
+function UserProfile() {
+  const { data, loading, error } = useFetch('/api/user');
+  
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error!</div>;
+  return <div>{data.name}</div>;
+}
+```
+
+**Rules for Custom Hooks:**
+
+- Must start with "use" (e.g., useFetch, useAuth)
+- Can use other hooks inside
+- Can return anything (values, functions, objects)
+
+---
+
+## 12. Controlled vs Uncontrolled Components
+
+**Simple Answer:** Who manages the form data - React or the browser?
+
+### Controlled Components (React is in charge)
+
+**How it works:**
+
+- React state holds the value
+- onChange updates the state
+- Input always shows what's in state
+
+```jsx
+function ControlledInput() {
+  const [name, setName] = useState('');
+  
+  return (
+    <input 
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+    />
+  );
+}
+```
+
+**Pros:**
+
+- Full control over input
+- Easy to validate in real-time
+- Can format/transform input immediately
+- Easy to disable/enable submit button
+
+**Cons:**
+
+- More code to write
+- Re-renders on every keystroke
+
+### Uncontrolled Components (Browser is in charge)
+
+**How it works:**
+
+- Browser manages the value
+- Use `ref` to get value when needed
+- React doesn't know the value until you ask
+
+```jsx
+function UncontrolledInput() {
+  const inputRef = useRef();
+  
+  const handleSubmit = () => {
+    console.log(inputRef.current.value); // Get value only when needed
+  };
+  
+  return (
+    <>
+      <input ref={inputRef} />
+      <button onClick={handleSubmit}>Submit</button>
+    </>
+  );
+}
+```
+
+**Pros:**
+
+- Less code
+- Better performance (no re-renders)
+- Works with non-React code
+
+**Cons:**
+
+- Less control
+- Harder to validate in real-time
+- Need refs to access values
+
+### When to use which?
+
+**Use Controlled when:**
+
+- You need validation as user types
+- You need to format input (e.g., phone numbers)
+- You want to disable submit until valid
+- Multiple inputs depend on each other
+
+**Use Uncontrolled when:**
+
+- Simple forms (login, search)
+- File inputs (must be uncontrolled)
+- Integrating with non-React libraries
+- Performance is critical
+
+---
+
+## 13. Error Boundaries in React
+
+**Simple Answer:** Error boundaries are like a safety net that catches errors in your React components and shows a nice error message instead of crashing your entire app.
+
+**Real-world analogy:** Think of it like an airbag in a car. If something goes wrong, the airbag (error boundary) activates to protect you, instead of letting the whole car crash.
+
+**How to create one:**
+
+```jsx
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  
+  static getDerivedStateFromError(error) {
+    // Update state so next render shows fallback UI
+    return { hasError: true };
+  }
+  
+  componentDidCatch(error, errorInfo) {
+    // Log error to error reporting service
+    console.log('Error:', error, errorInfo);
+  }
+  
+  render() {
+    if (this.state.hasError) {
+      return <h1>Something went wrong. Please try again.</h1>;
+    }
+    
+    return this.props.children;
+  }
+}
+
+// How to use it
+function App() {
+  return (
+    <ErrorBoundary>
+      <MyComponent />
+    </ErrorBoundary>
+  );
+}
+```
+
+**What errors do they catch?**
+
+- ✅ Errors in rendering
+- ✅ Errors in lifecycle methods
+- ✅ Errors in constructors
+
+**What errors do they NOT catch?**
+
+- ❌ Event handlers (use try-catch)
+- ❌ Async code (setTimeout, promises)
+- ❌ Server-side rendering
+- ❌ Errors in the error boundary itself
+
+---
+
+## 14. Virtual DOM and How React Uses It
+
+**Simple Answer:** The Virtual DOM is like a blueprint of your UI that React keeps in memory. React uses it to figure out the fastest way to update your actual webpage.
+
+**Real-world analogy:** Imagine you're redecorating your room:
+
+- **Without Virtual DOM:** Move everything around, then realize what doesn't work, move it back, repeat.
+- **With Virtual DOM:** Plan on paper first, compare with current layout, then only move what needs to change.
+
+**How it works:**
+
+1. **Initial Render:**
+    
+    - React creates a Virtual DOM (JavaScript object tree)
+    - React creates the real DOM from it
+    - User sees the page
+2. **When state changes:**
+    
+    - React creates a NEW Virtual DOM
+    - Compares new Virtual DOM with old Virtual DOM (diffing)
+    - Calculates minimum changes needed
+    - Updates only those parts in real DOM
+
+**Example:**
+
+```jsx
+// You have this:
+<div>
+  <h1>Hello</h1>
+  <p>Count: 0</p>
+</div>
+
+// State changes, now you need:
+<div>
+  <h1>Hello</h1>
+  <p>Count: 1</p>
+</div>
+
+// React only updates the text "0" → "1"
+// Doesn't recreate the entire div, h1, or p elements
+```
+
+**Why it's fast:**
+
+- Updating real DOM is slow
+- JavaScript operations (Virtual DOM) are fast
+- React batches multiple changes together
+- Only updates what actually changed
+
+---
+
+## 15. Implementing Dark/Light Mode with Context
+
+**Simple Answer:** Create a "theme manager" that any component can access without passing props through every level.
+
+**Step-by-step Implementation:**
+
+### Step 1: Create Theme Context
+
+```jsx
+import { createContext, useState, useContext } from 'react';
+
+const ThemeContext = createContext();
+
+export function ThemeProvider({ children }) {
+  const [theme, setTheme] = useState('light');
+  
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+  };
+  
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+}
+
+// Custom hook for easy access
+export function useTheme() {
+  return useContext(ThemeContext);
+}
+```
+
+### Step 2: Wrap Your App
+
+```jsx
+function App() {
+  return (
+    <ThemeProvider>
+      <Header />
+      <MainContent />
+      <Footer />
+    </ThemeProvider>
+  );
+}
+```
+
+### Step 3: Use Theme in Components
+
+```jsx
+function Header() {
+  const { theme, toggleTheme } = useTheme();
+  
+  return (
+    <header className={theme}>
+      <h1>My App</h1>
+      <button onClick={toggleTheme}>
+        Switch to {theme === 'light' ? 'dark' : 'light'} mode
+      </button>
+    </header>
+  );
+}
+
+function MainContent() {
+  const { theme } = useTheme();
+  
+  return (
+    <main className={theme}>
+      <p>Content here...</p>
+    </main>
+  );
+}
+```
+
+### Step 4: Add CSS
+
+```css
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
+```
+
+**Why use Context?**
+
+- No prop drilling (passing theme through every component)
+- Any component can access theme
+- Single source of truth
+- Easy to maintain
+
+**Advanced: Persist theme in localStorage**
+
+```jsx
+export function ThemeProvider({ children }) {
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem('theme');
+    return saved || 'light';
+  });
+  
+  const toggleTheme = () => {
+    setTheme(prevTheme => {
+      const newTheme = prevTheme === 'light' ? 'dark' : 'light';
+      localStorage.setItem('theme', newTheme);
+      return newTheme;
+    });
+  };
+  
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+}
+```
+
+---
+
+## Quick Reference Table
+
+|Concept|When to Use|Key Benefit|
+|---|---|---|
+|**JSX**|Always in React|Readable UI code|
+|**useRef**|DOM access, persist values|No re-renders|
+|**Custom Hooks**|Reusable logic|Code organization|
+|**Controlled Components**|Complex forms|Full control|
+|**Uncontrolled Components**|Simple forms|Better performance|
+|**Error Boundaries**|Catch component errors|Prevent crashes|
+|**Virtual DOM**|Automatic|Fast updates|
+|**Context**|Global state|Avoid prop drilling|
+
+## Tips for Interviews
+
+1. **Explain with examples:** Always back up your answers with code examples
+2. **Mention trade-offs:** Show you understand pros and cons
+3. **Think about performance:** Discuss when something is fast or slow
+4. **Real-world scenarios:** Connect concepts to actual use cases
+5. **Ask clarifying questions:** If something is unclear, ask!
+
+Good luck with your interview! 🚀

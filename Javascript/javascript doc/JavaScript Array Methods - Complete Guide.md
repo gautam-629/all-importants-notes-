@@ -18,10 +18,9 @@ JavaScript arrays come with a rich set of built-in methods that allow you to man
 
 Arrays in JavaScript are objects with special behavior for numeric indexes and a `length` property. They provide methods that can be categorized into several groups based on their functionality.
 
-## Mutating Methods
+## Mutating Methods(8 methods)
 
 These methods modify the original array.
-
 ### push()
 
 Adds one or more elements to the end of an array.
@@ -115,10 +114,9 @@ numbers.fill(9, 2, 4); // Fill with 9 from index 2 to 4
 console.log(numbers); // [1, 2, 9, 9, 5]
 ```
 
-## Non-Mutating Methods
+## Non-Mutating Method(3 Method)
 
 These methods return a new array without modifying the original.
-
 ### concat()
 
 Merges two or more arrays.
@@ -157,7 +155,7 @@ const csv = numbers.join(',');
 console.log(csv); // '1,2,3,4,5'
 ```
 
-## Iteration Methods
+## Iteration Methods(5 method)
 
 These methods execute a function for each array element.
 
@@ -237,7 +235,7 @@ const reversed = letters.reduceRight((acc, letter) => acc + letter, '');
 console.log(reversed); // 'dcba'
 ```
 
-## Search Methods
+## Search Methods(5 methods)
 
 These methods help you find elements in arrays.
 
@@ -298,7 +296,7 @@ console.log(fruits.includes('banana')); // true
 console.log(fruits.includes('grape')); // false
 ```
 
-## Transformation Methods
+## Transformation Methods(2 Method)
 
 ### flat()
 
@@ -323,7 +321,7 @@ const words = sentences.flatMap(sentence => sentence.split(' '));
 console.log(words); // ['Hello', 'world', 'How', 'are', 'you']
 ```
 
-## Utility Methods
+## Utility Methods(5 Method)
 
 ### every()
 
@@ -386,8 +384,7 @@ const arr1 = Array.of(7); // [7]
 const arr2 = new Array(7); // [empty × 7]
 const arr3 = Array.of(1, 2, 3); // [1, 2, 3]
 ```
-
-## ES6+ Methods
+## ES6+ Methods(3 Method)
 
 ### entries()
 
@@ -400,9 +397,7 @@ for (const [index, fruit] of fruits.entries()) {
 }
 // Output: 0: apple, 1: banana, 2: orange
 ```
-
 ### keys()
-
 Returns an array iterator that contains the keys for each index.
 
 ```javascript
@@ -410,9 +405,7 @@ const fruits = ['apple', 'banana', 'orange'];
 const keys = Array.from(fruits.keys());
 console.log(keys); // [0, 1, 2]
 ```
-
 ### values()
-
 Returns an array iterator that contains the values for each index.
 
 ```javascript
@@ -422,7 +415,6 @@ for (const fruit of fruits.values()) {
 }
 // Output: apple, banana, orange
 ```
-
 ### copyWithin()
 
 Shallow copies part of an array to another location in the same array.
@@ -432,9 +424,7 @@ const arr = [1, 2, 3, 4, 5];
 arr.copyWithin(0, 3); // Copy elements from index 3 to index 0
 console.log(arr); // [4, 5, 3, 4, 5]
 ```
-
 ## Method Chaining
-
 One of the powerful features of array methods is the ability to chain them together:
 
 ```javascript
