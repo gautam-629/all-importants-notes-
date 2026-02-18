@@ -59,6 +59,8 @@ SQL functions vary depending on the database system (MySQL, PostgreSQL, SQL Serv
 - `MIN()` → Returns minimum value
 - `MAX()` → Returns maximum value
 - `GROUP_CONCAT()` _(MySQL)_ / `STRING_AGG()` _(PostgreSQL/SQL Server)_ → Concatenates values
+- array_agg
+- json_agg
 
 _Note: Often used with `GROUP BY` clause_
 ## 2. String/Text Functions
@@ -170,6 +172,7 @@ _Note: Often used with `GROUP BY` clause_
 - `->`, `->>` _(PostgreSQL, MySQL)_ → JSON operators
 - `JSON_ARRAY()`, `JSON_OBJECT()` → Create JSON structures
 - `JSON_AGG()` → Aggregate into JSON array
+- json_build_object()
 
 ## 9. System/Metadata Functions
 **Concept:** Functions that provide information about the database system and environment.

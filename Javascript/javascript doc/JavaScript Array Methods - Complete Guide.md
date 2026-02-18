@@ -1,22 +1,28 @@
 
 ## Table of Contents
 
-1. [Introduction](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#introduction)
-2. [Mutating Methods](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#mutating-methods)
-3. [Non-Mutating Methods](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#non-mutating-methods)
-4. [Iteration Methods](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#iteration-methods)
-5. [Search Methods](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#search-methods)
-6. [Transformation Methods](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#transformation-methods)
-7. [Utility Methods](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#utility-methods)
-8. [ES6+ Methods](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#es6-methods)
-9. [Method Chaining](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#method-chaining)
-10. [Performance Tips](https://claude.ai/chat/cd7125a8-2c10-40ac-ba41-25bc10ea54c7#performance-tips)
-
+1. Introduction
+2. Mutating Methods
+3. Non-Mutating Methods
+4. Iteration Methods
+5. Search Methods
+6. Transformation Methods
+7. Utility Methods
+8. ES6+ Methods
+9. Method Chaining
+10. Performance Tips
 ## Introduction
 
 JavaScript arrays come with a rich set of built-in methods that allow you to manipulate, search, transform, and iterate over array elements. Understanding these methods is crucial for writing efficient and readable JavaScript code.
 
 Arrays in JavaScript are objects with special behavior for numeric indexes and a `length` property. They provide methods that can be categorized into several groups based on their functionality.
+```javascript
+## Arrays can have arbitrary properties (like objects)
+const arr = [1, 2, 3];
+arr.foo = "bar";
+console.log(arr.foo);
+console.log(arr)
+```
 
 ## Mutating Methods(8 methods)
 
@@ -155,7 +161,7 @@ const csv = numbers.join(',');
 console.log(csv); // '1,2,3,4,5'
 ```
 
-## Iteration Methods(5 method)
+## Iteration Methods(4 method)
 
 These methods execute a function for each array element.
 
@@ -170,7 +176,15 @@ numbers.forEach((num, index) => {
 });
 // Output: Index 0: 2, Index 1: 4, Index 2: 6, Index 3: 8, Index 4: 10
 ```
-
+usecase: Iterating or updating external state
+```javascript
+let total=0;
+const prices=[3,13,3]
+prices.forEach(price=>{
+ total+=price
+})
+console.log(total)
+```
 ### map()
 
 Creates a new array with the results of calling a provided function on every element.

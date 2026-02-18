@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "48377e9c21e2b22c",
+        "id": "ed3dcf0e495e2882",
         "type": "tabs",
         "children": [
           {
-            "id": "0b92bcd3fd43ed2b",
+            "id": "ff36b55b8fb933de",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Javascript/javascript Questions/fullstackquestions/Full stack questions.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Full stack questions"
             }
           }
         ]
@@ -90,16 +94,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "Javascript/javascript Questions/Javascript Basic Questions.md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Javascript Basic Questions"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Javascript/javascript Questions/Javascript Basic Questions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Javascript Basic Questions"
             }
           },
           {
@@ -144,11 +150,12 @@
               "title": "Outline"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -162,46 +169,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b92bcd3fd43ed2b",
+  "active": "ff36b55b8fb933de",
   "lastOpenFiles": [
-    "Javascript/Javascript.md",
-    "Javascript/javascript doc/Javascript Introduction.md",
-    "Javascript/javascript doc/Regex Syntax Reference (JavaScript).md",
-    "Integration Concepts/Integration Concept.md",
-    "Integration Concepts/esewaflow.jpg",
-    "Integration Concepts/esewa Integration Flow.md",
+    "Javascript/javascript Questions/fullstackquestions/Plan.md",
+    "Javascript/javascript Questions/fullstackquestions/Full stack questions.md",
+    "Backend/Backend  Questions/Backend Related Question.md",
+    "Databases/Redis/Redis Complete Guide.md",
+    "Backend/Expressjs notes/Express Concept and Guide.md",
+    "Backend/Node js/Event Loop and core concept.md",
+    "Backend/Node js/Node js clustering.md",
     "Databases/Databases.md",
-    "Frontend/Frontend.md",
+    "Databases/Redis",
+    "Javascript/javascript Questions/fullstackquestions/Array Manipulation Questions.md",
+    "Backend/Nestjs Doc/Nest js Concepts  Guide.md",
+    "Dsa/Big O Notation - Short Notes.md",
+    "Dsa/DSA.md",
+    "Backend/Node js",
     "Javascript/javascript Questions/JavaScript Interview Questions.md",
-    "Frontend/React doc/Complete React Concepts Guide.md",
-    "Javascript/javascript Questions/Array Manipulation Questions.md",
+    "Javascript/javascript Questions/Javascript Basic Questions.md",
     "Javascript/javascript Questions/Javascript String Related Questions.md",
-    "Javascript/javascript doc/Normal Function vs Arrow Function in JavaScript.md",
-    "Javascript/javascript doc/JavaScript call, apply, and bind - Complete Guide.md",
-    "Javascript/javascript doc/hoisting.md",
-    "Javascript/javascript doc/Scope.md",
-    "Javascript/javascript doc/JavaScript Error Handling.md",
-    "Javascript/javascript doc/JavaScript Object Methods.md",
-    "Javascript/javascript doc/JavaScript Array Methods - Complete Guide.md",
-    "Frontend/NextJs doc/Next.js Concepts Guide.md",
-    "Frontend/Questions/Frontend Questions and Answer.md",
-    "Javascript/javascript doc/JavaScript String Methods - Complete Guide.md",
-    "Integration Concepts/Stripe Integration.md",
-    "Array Manipulation.md",
+    "Javascript/javascript Questions/fullstackquestions",
+    "Javascript/javascript Questions/test.md",
+    "tools/🔌 Socket.IO with Node.js — Core to Advanced Guide.md",
+    "Databases/Mysql/Questions/# E-Commerce API Database Design & Full-Stack Scenarios.md",
     "Databases/Mysql/SQL Functions Reference.md",
+    "Frontend/React doc/Complete React Concepts Guide.md",
+    "tools",
     "Databases/Mysql/Query Optimize.md",
     "Databases/Mysql/Questions/SQL Queries Guide for Online Learning Platform.md",
+    "Databases/Mysql/Questions/Integrate pagination In Sql.md",
+    "Javascript/javascript doc/JavaScript Array Methods - Complete Guide.md",
+    "Javascript/javascript doc/Javascript Introduction.md",
+    "Javascript/javascript doc/JavaScript Error Handling.md",
+    "Frontend/Html and Css",
+    "Integration Concepts/esewaflow.jpg",
     "Frontend",
     "Backend",
     "Javascript/javascript doc",
     "Databases/Mysql/Questions",
     "Databases/Mysql",
-    "Databases/Redis",
-    "Databases",
-    "Dsa",
     "Integration Concepts/stripe_flow_svg.jpg",
-    "javascript Questions/Untitled",
-    "Javascript/javascript Questions",
     "Integration Concepts/stripe_flow_svg.png",
     "Integration Concepts/img/stripe_flow_svg.png",
     "Untitled.canvas"

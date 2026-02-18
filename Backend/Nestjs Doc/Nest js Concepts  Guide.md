@@ -204,3 +204,11 @@ export class HttpExceptionFilter implements ExceptionFilter {
   }
 }
 ```
+# NestJS Configuration Methods Summary
+
+|Method|Scope|Use Case|Example Location|
+|---|---|---|---|
+|`registerAs`|Module-level (namespaced)|Organize configs modularly|`database.config.ts`|
+|`forRoot`|Global|Load configs once at application start|`AppModule`|
+|`forFeature`|Feature/module|Scoped configuration for a specific module|`EmailModule`|
+|`registerAsync`|Global or module|Load configuration dynamically or asynchronously|`AppModule` or `Module`|
