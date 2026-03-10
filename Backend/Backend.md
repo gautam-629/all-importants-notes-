@@ -1,3 +1,8 @@
 1.[[Express Concept and Guide]]
 2.[[Nest js Concepts  Guide]]
 3.[[Backend Related Question]]
+4.[[Backend Related Question]]
+5.[[Databases]]
+6.[[🔌 Socket.IO with Node.js — Core to Advanced Guide]]
+7.[[Integration Concept]]
+8.[[Repositories]]

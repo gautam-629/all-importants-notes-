@@ -40,24 +40,20 @@ CREATE INDEX idx_orders_status ON orders(status);
 
 This index allows the database to quickly locate all orders with a specific status without scanning the entire table.
 
-When you **create an index** on a column (e.g., `status`), the database engine builds a **separate data structure** (usually a **B-tree** or sometimes a **hash index**, depending on the DBMS).
+When you **create an index** on a column (e.g., `status`), the database engine builds a **separate data structure** (usually a **B-tree** or sometimes a **hash index**, depending on the DBMS)[[B-Tree vs Hash Index (Simple Notes)]].
 ### Without an Index
 - The database has to scan the **entire `orders` table** row by row.
 - For each row, it checks if `status = 'shipped'`.
 - If the table is very large, this becomes slow (called a **full table scan**).
 
 ### 2. Index for JOIN Operations
-
 For tables frequently joined with other tables, index the join columns.
-
 **Query Example:**
-
 ```sql
 SELECT o.order_id, c.name 
 FROM orders o
 JOIN customers c ON o.customer_id = c.customer_id;
 ```
-
 **Optimization:**
 
 ```sql
@@ -65,11 +61,8 @@ CREATE INDEX idx_orders_customer_id ON orders(customer_id);
 ```
 
 This dramatically improves join performance by providing fast lookups on the foreign key column.
-
 ### 3. Index for ORDER BY
-
 When queries frequently sort results, create indexes on the sorting columns.
-
 **Query Example:**
 
 ```sql

@@ -52,7 +52,7 @@ This roadmap balances:
 **Solve:**
 
 - [x] Q13 Count occurrences  
-- [ ] Q14 Group by property  
+- [x] Q14 Group by property  
 - [ ] Q15 Aggregate sum  
 - [ ] Q21 Partition array  
 

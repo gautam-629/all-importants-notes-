@@ -180,3 +180,15 @@ App → Redis → Database
 4. **Result:** Faster response & lower DB load
 
 ---
+## Some Questions
+
+1.**Why use Redis in backend?**
+    Often used as:
+    - Cache
+    - Session store
+    - Message broker
+    - Real-time data store
+2.**What caching strategy do you use?**
+    I usually use the Cache-Aside strategy with Redis. The API checks the cache first; on a miss, it fetches from the database and stores the result with a TTL(cache-aside pattern.).
+3.**What is TTL?**
+    **TTL (Time To Live)** is the **duration for which data remains valid before it expires automatically**.
