@@ -250,6 +250,25 @@ console.log(groupById(orders));
 - **Input**: `[{ userId: 1, amount: 50 }, { userId: 1, amount: 30 }, { userId: 2, amount: 20 }]`
 - **Task**: Sum amounts by userId
 - **Expected Output**: `{ 1: 80, 2: 20 }`
+  ```typescript
+  interface IOrder{
+  userId:number,
+  amount:number
+}
+ const orders:IOrder[]=[{ userId: 1, amount: 50 }, { userId: 1, amount: 30 }, {    userId: 2, amount: 20 }]
+ const result:Record<number,number>={}
+ for(const order of orders){
+   if(result[order.userId]){
+        result[order.userId]= result[order.userId] + order.amount
+   }else{
+    result[order.userId]=order.amount
+   }
+}
+const result=orders.reduce((acc:Record<number,number>,order)=>{
+    acc[order.userId]=(acc[order.userId ] || 0) + order.amount
+    return acc
+},{} as Record<number,number>)
+  ```
 
 **16. How do you find max and min values in an array of objects?**
 - **Use Case**: Determine highest and lowest order amount
@@ -304,10 +323,31 @@ console.log(groupById(orders));
 
 **21. How do you partition an array based on a condition?**
 - **Use Case**: Separate active and inactive users
-- **Array Methods**: `reduce()`, `filter()`
 - **Input**: `[{ id: 1, active: true }, { id: 2, active: false }, { id: 3, active: true }]`
 - **Task**: Partition by active status
 - **Expected Output**: `{ active: [{ id: 1, active: true }, { id: 3, active: true }], inactive: [{ id: 2, active: false }] }`
+  ```typescript
+interface IUser{
+  id:number,
+  active:boolean
+}
+const users:IUser[]=[{ id: 1, active: true }, { id: 2, active: false }, { id: 3, active: true }]
+const result:Record<"active"|"inactive",IUser[]>={
+  active:[],
+  inactive:[]
+}
+for(const user of users){
+   if(user.active ){
+     result.active.push(user)
+   }else{
+     result.inactive.push(user)
+   }
+}
+const result=users.reduce((acc,user)=>{
+  user.active?acc.active.push(user):acc.inactive.push(user)
+       return acc
+},{active:[],inactive:[]} as Record<string,IUser[]>)
+  ```
 
 **22. How do you shuffle an array randomly?**
 - **Use Case**: Randomize quiz questions or playlist order

@@ -1,4 +1,3 @@
-#### N+1 Problem – TypeORM (Node.js)
 ### 📌 What is N+1 Problem?
 The N+1 problem occurs when an application makes:
 - 1 query to fetch parent records

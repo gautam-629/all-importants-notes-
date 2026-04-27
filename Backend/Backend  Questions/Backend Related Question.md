@@ -5,7 +5,7 @@
 ---
 1.[[Event Loop and core concept]]
 2.[[Node js clustering]]
-- [ ] **How do you handle CPU-heavy tasks?**
+- [x] **How do you handle CPU-heavy tasks?**
 - [ ] **How do you implement graceful shutdown?**
 - [ ] **What causes memory leaks in Node?**
 - [ ] **How do you debug performance issues?**

@@ -6,3 +6,6 @@
 6.[[🔌 Socket.IO with Node.js — Core to Advanced Guide]]
 7.[[Integration Concept]]
 8.[[Repositories]]
+9.[[Full stack CI-cd Pipeline with AWS EC2]]
+10.[[Network Fundamentals for Backend Developers]]
+11.[[Docker]]

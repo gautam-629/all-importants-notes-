@@ -53,8 +53,8 @@ This roadmap balances:
 
 - [x] Q13 Count occurrences  
 - [x] Q14 Group by property  
-- [ ] Q15 Aggregate sum  
-- [ ] Q21 Partition array  
+- [x] Q15 Aggregate sum  
+- [x] Q21 Partition array  
 
 📌 **Focus:**
 
