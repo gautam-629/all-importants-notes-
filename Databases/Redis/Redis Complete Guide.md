@@ -111,9 +111,7 @@ HGETALL user:1
 ## 5. Persistence (Important!)
 
 Even though Redis is in-memory, it can save data to disk:
-
 ### Options:
-
 - **RDB** – Snapshotting
 - **AOF** – Append-only file
 - **RDB + AOF** – Best reliability
@@ -121,36 +119,28 @@ Even though Redis is in-memory, it can save data to disk:
 **So Redis won't lose data if configured properly.**
 
 ---
-
 ## 6. Common Redis Use Cases
 
 ### ✅ Caching
 ```redis
 SET user:1 "Alice" EX 60  # Cache for 60 seconds
 ```
-
 ### ✅ Sessions
-
 - Store login sessions
 - Faster than database
-
 ### ✅ Rate Limiting
-
 - API request limits
-
 ### ✅ Pub/Sub (Messaging)
 ```redis
 SUBSCRIBE notifications
 PUBLISH notifications "Hello!"
 ```
-
 ### ✅ Real-time Analytics
 
 - Counters
 - Live dashboards
 
 ---
-
 ## 7. When NOT to Use Redis
 
 ❌ Large datasets that don't fit in RAM  
@@ -158,7 +148,6 @@ PUBLISH notifications "Hello!"
 ❌ Strong ACID transactions only
 
 ---
-
 ## 8. Redis Architecture (Simple)
 ```
 App → Redis → Database
@@ -169,7 +158,6 @@ App → Redis → Database
 **Redis sits between your app and database.**
 
 ---
-
 ## 9. How Redis Is Used in Real Projects
 
 ### Example:

@@ -2,6 +2,57 @@
 ### _Building a Simple Social Media App — The "Why" Journey_
 
 ---
+## Part 1 — Building a Simple Social Media App
+
+### 1. How Code Becomes a Running Process
+
+### 2. Client-Server Architecture
+
+### 3. Network & HTTP Communication
+
+### 4. IP Addresses
+
+### 5. Port Numbers
+
+### 6. DNS (Domain Name System)
+
+### 7. The Full Request Flow
+
+---
+## Part 2 — How to Scale a Social Media App
+
+### 1. The Scaling Problem
+
+### 2. Vertical Scaling (Scale Up)
+
+### 3. Horizontal Scaling (Scale Out)
+
+### 4. Load Balancer
+
+### 5. Handling Load Balancer Failures
+- Active-Active Strategy
+- Active-Passive Strategy
+### 6. Database Server
+
+- Option 1: Store Data on App Servers ❌
+- Option 2: Replicate Data on All App Servers ❌
+- Option 3: Separate Database Server ✅
+### 7. Stateless vs Stateful Architecture
+
+### 8. Database Scaling
+
+- Replication (Read-Heavy Apps)
+- Sharding (Write-Heavy Apps)
+
+### 9. Engineering Priority — The Golden Rule
+
+---
+## Quick Reference Tables
+
+### Core Networking Concepts
+
+### Scaling Concepts
+---
 ## The Big Question
 
 > You built a Social Media App on your laptop. It works perfectly. But how do other people access it?
@@ -134,7 +185,6 @@ Socket = IP Address + Port Number
 **Problem 1:** IP addresses like `142.250.195.46` are hard to remember. Can we use a name like `www.google.com` instead?
 
 **Problem 2 (bigger):** What if the server's IP changes?
-
 - If you restart/reconnect your server to the internet → **IP changes**
 - Now every client has the wrong IP → app is unreachable ❌
 

@@ -346,3 +346,48 @@ export default function Error({
   )
 }
 ```
+## 11. How would you optimize SEO in Next.js?  
+SEO optimization in Next.js includes multiple strategies:  
+- Using **Server-Side Rendering (SSR)** or **Static Site Generation (SSG)** for pre-rendered HTML  
+- Adding proper **meta tags and dynamic metadata**  
+- Using semantic HTML tags like `<header>`, `<main>`, `<article>`  
+- Optimizing images using Next.js Image component  
+- Creating clean, readable URLs (slugs)  
+- Generating sitemap.xml and robots.txt  
+- Improving page speed using caching and code splitting  
+These techniques ensure better indexing by search engines and improved ranking.
+## 12. Explain caching strategies in Next.js  
+Next.js provides multiple caching strategies to improve performance:  
+### 1. Static Generation (SSG)  
+Pages are generated at build time and reused for every request.  
+### 2. Incremental Static Regeneration (ISR)  
+Pages are regenerated after a specific time interval without rebuilding the entire app.  
+### 3. Data Caching  
+API responses can be cached using fetch options like `force-cache`.  
+### 4. Request Memoization  
+Avoids duplicate requests during server rendering.  
+### 5. CDN Caching  
+Static assets are served from CDN for faster global access.  
+These strategies reduce server load and improve application speed significantly.
+## 6. Difference between Traditional CMS and Headless CMS  
+
+| Traditional CMS                          | Headless CMS                                        |     |
+| ---------------------------------------- | --------------------------------------------------- | --- |
+| Backend and frontend are tightly coupled | Backend and frontend are separated                  |     |
+| Limited frontend flexibility             | Any frontend can be used (React, mobile apps, etc.) |     |
+| Example: WordPress                       | Example: Strapi, Contentful                         |     |
+| UI is controlled by CMS                  | CMS only provides API data                          |     |
+| Hard to scale across platforms           | Highly scalable and flexible                        |     |
+|                                          |                                                     |     |
+
+Headless CMS is widely used in modern applications because it works perfectly with frameworks like Next.js.
+
+## 8. Prisma ORM (Important for this role)  
+Prisma ORM is a **modern database toolkit for Node.js and TypeScript**.  
+It is commonly used in Next.js backend development for database operations.  
+### Key Features:  
+- Type-safe database queries  
+- Auto-generated client  
+- Easy schema definition  
+- Migration system  
+- Works with PostgreSQL, MySQL, MongoDB, etc.

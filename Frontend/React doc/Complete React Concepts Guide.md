@@ -1660,11 +1660,8 @@ function UserProfile() {
 ## 12. Controlled vs Uncontrolled Components
 
 **Simple Answer:** Who manages the form data - React or the browser?
-
 ### Controlled Components (React is in charge)
-
 **How it works:**
-
 - React state holds the value
 - onChange updates the state
 - Input always shows what's in state

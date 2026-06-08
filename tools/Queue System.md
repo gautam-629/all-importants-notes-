@@ -117,7 +117,6 @@ queue.on('stalled', (job) => {
     
 
 ---
-
 ## 8. What Is Idempotency in Job Processing?
 
 **Idempotency** ensures running a job **multiple times produces the same result** without duplicate effects.

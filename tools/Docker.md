@@ -88,6 +88,9 @@ A way to **persist data** outside a container. Essential for databases.
 ### 🌐 Network
 
 Allows containers to **talk to each other** by name.
+```
+docker network create my-network
+```
 
 ### 🔧 Docker Compose
 
@@ -303,6 +306,7 @@ docker build -t my-backend:v1 .
 docker run -d \
   -p 3000:3000 \
   --name backend \
+  --network my-network \
   my-backend:v1
 
 # Test it
@@ -368,6 +372,7 @@ The good news: **you don't need a Dockerfile for PostgreSQL**. The official imag
 ```bash
 docker run -d \
   --name postgres-db \
+  --network my-network \
   -e POSTGRES_USER=myuser \
   -e POSTGRES_PASSWORD=mypassword \
   -e POSTGRES_DB=myapp \

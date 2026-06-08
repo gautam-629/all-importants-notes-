@@ -13,7 +13,6 @@ new info();   // new instance of info {}
 ```
 
 ---
-
 ## 2. bind()
 
 `bind()` sets the value of `this` and returns a **new function** without calling it immediately.
@@ -25,15 +24,12 @@ const user = {
     console.log(`${this.name}`, ar1, ar2);
   },
 };
-
 const user1 = { name: "Gautam" };
-
 const boundFunc = user.printName.bind(user1, "Hello", "World");
 boundFunc(); // Output: Gautam Hello World
 ```
 
 ---
-
 ## 3. call()
 
 `call()` sets `this` and **calls the function immediately**, passing arguments separately.
@@ -53,7 +49,6 @@ user.printName.call(user1, "arg1", "arg2");
 ```
 
 ---
-
 ## 4. apply()
 
 `apply()` works like `call()` but passes arguments as an **array**.
@@ -73,7 +68,6 @@ user.printName.apply(user1, ["arg1", "arg2"]);
 ```
 
 ---
-
 ## Summary
 
 |Method|Calls Immediately|Arguments|Description|
@@ -103,7 +97,6 @@ console.log(getValue.apply(obj, [1, 2])); // "42, 1, 2"
 ```
 
 ---
-
 ## Common Use Cases
 
 ### Method Borrowing
@@ -128,7 +121,6 @@ const numbers = [5, 6, 2, 3, 7];
 const max = Math.max.apply(null, numbers);
 console.log(max); // 7
 ```
-
 ### Event Handlers
 
 ```javascript
@@ -147,7 +139,6 @@ class Counter {
   }
 }
 ```
-
 ### Partial Application
 
 ```javascript
@@ -160,7 +151,6 @@ console.log(double(5)); // 10
 ```
 
 ---
-
 ## Key Takeaways
 
 - **`bind()`**: Creates a new function with fixed `this`
